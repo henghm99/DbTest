@@ -12,6 +12,7 @@ abstract  class AppDB: RoomDatabase() {
 
     abstract fun studentDao(): StudentDAO
 
+    // companion object -> 'static' in term of java
     companion object {
 
         @Volatile
