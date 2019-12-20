@@ -2,7 +2,6 @@ package com.example.dbtest
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.FragmentTransaction
 import com.example.dbtest.Database.AppDB
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -25,6 +24,10 @@ class MainActivity : AppCompatActivity() {
 
         btnView.setOnClickListener() {
             mgr.beginTransaction().replace(R.id.mainFrame, ViewRecordFragment()).commit()
+        }
+
+        btnDelete2.setOnClickListener() {
+            mgr.beginTransaction().replace(R.id.mainFrame, DeleteRecordFragment()).commit()
         }
     }
 

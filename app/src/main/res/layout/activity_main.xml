@@ -19,6 +19,28 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <FrameLayout
+        android:id="@+id/mainFrame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd">
+
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnDelete2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELETE RECORD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnView"
+        app:layout_constraintTop_toTopOf="@+id/btnAdd" />
+
     <Button
         android:id="@+id/btnAdd"
         android:layout_width="wrap_content"
@@ -34,22 +56,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="View Record"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnDelete2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnAdd"
         app:layout_constraintTop_toTopOf="@+id/btnAdd" />
-
-    <FrameLayout
-        android:id="@+id/mainFrame"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAdd">
-
-
-    </FrameLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

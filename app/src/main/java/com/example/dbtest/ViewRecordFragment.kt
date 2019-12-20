@@ -38,15 +38,15 @@ class ViewRecordFragment : Fragment() {
             txtResult.adapter = adapter
 
             try {
-                //display Data
+                //display from database by getAll() method
                 val sList: List<Student> = MainActivity.appDB.studentDao().getAll()
 
                 var name:String = ""
 
-
+                //for earch
                 for (s in sList) {
-                      //  name = name + s.studentid + " " + s.studentName + "\n"
-                    adapter.add(s.studentName)
+                    //  name = name + s.studentid + " " + s.studentName + "\n"
+                    adapter.add(s.studentName + "(" + s.studentid + ")")
 
                 }
 
